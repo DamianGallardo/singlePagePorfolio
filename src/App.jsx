@@ -8,26 +8,26 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <header className="App-header">
+        <img src={reactLogo} className="App-logo" alt="react logo" />
+        <img src={viteLogo} className="App-logo" alt="vite logo" />
+        <p>Hello Vite + React!</p>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <p>
+          Edit <code>App.jsx</code> and save to test HMR updates.
+        </p>
+        <p>
+          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+            Learn React
+          </a>
+          {' | '}
+          <a className="App-link" href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener noreferrer">
+            Vite Docs
+          </a>
+        </p>
+      </header>
     </>
   )
 }
