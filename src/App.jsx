@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Box, Container } from '@mui/material'
+import { NavBar } from './navBar'
+import './index.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+export const App = () =>  {
 
   return (
     <>
-      <header className="App-header">
-        <img src={reactLogo} className="App-logo" alt="react logo" />
-        <img src={viteLogo} className="App-logo" alt="vite logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-            Learn React
-          </a>
-          {' | '}
-          <a className="App-link" href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener noreferrer">
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <Box sx={{width:"100%", height:"100%" }} >
+        <NavBar />
+      </Box>
+
+    <Container maxWidth="lg" >
+      <Box sx={{width:"100%", height:"100%" }} >
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo dolore iusto blanditiis minus nemo quo corrupti, a perferendis consectetur ea quae neque mollitia eveniet voluptates unde totam reiciendis vero!</h1>
+      </Box>
+    </Container>
     </>
+
   )
 }
-
-export default App
